@@ -14,6 +14,7 @@ public class Que1 {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		//get the connection 
 		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testcoursedb","root","root");
+		System.out.println(1);
 		return con;
 	}
 	public static void printCountryNames() throws ClassNotFoundException, SQLException {
