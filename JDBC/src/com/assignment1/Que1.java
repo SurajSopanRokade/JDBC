@@ -32,7 +32,7 @@ public class Que1 {
 		String sql ="SELECT e1.first_name, e.first_name FROM employees e INNER JOIN employees e1 ON (e.employee_id=e1.manager_id)";
 		Statement st =con.createStatement();
 		ResultSet rs = st.executeQuery(sql);
-		System.out.println(2);
+		System.out.println(3);
 		while(rs.next()) {
 			System.out.print(" "+"Employee_name : " + rs.getString(1));
 			System.out.println(" Manager_name : " + rs.getString(2));
